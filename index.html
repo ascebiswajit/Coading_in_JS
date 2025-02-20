@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Redirect Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Redirect Example</h1>
+    <p>Click the button below to execute an IIFE and prevent link redirection.</p>
+    
+    <button onclick="(function(){ alert('IIFE Executed!'); })();">Run IIFE</button>
+    <br><br>
+    <a href="javascript:void(0);" onclick="redirectToPage()">Go to Google</a>
+    <br><br>
+    <a href="javascript:void(0);" onclick="window.open('https://www.google.com', '_blank')">Open Google in New Tab</a>
+    
+    <script>
+        function redirectToPage() {
+            window.location.href = "https://www.google.com"; // Redirect without reloading manually
+        }
+    </script>
+</body>
+</html>

@@ -46,5 +46,10 @@ console.log("Welcome 2025");
 // console.log(count)
 
 const numbers = [5, 3, 8, 1, 4];
-const p = numbers.map
+const p = numbers.map(num=>num*5)
 console.log(p)
+
+
+(function(num){
+    console.log(num)
+})(5)
